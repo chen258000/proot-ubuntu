@@ -14,9 +14,10 @@
     - $ `pkg install wget git tar proot -y`
 
 3.  下载ubuntu.tar.xz【复制下面命令，在Termux中输入，回车】
-    - $ `git clone https://gitee.com/sharpeter/proot-ubuntu $HOME`
+    - $ `git clone https://gitee.com/sharpeter/proot-ubuntu`
 
 4.  解压安装【复制下面命令，在Termux中输入，回车】
+    - $ `wget https://gitee.com/sharpeter/proot-ubuntu/raw/main/install_ubuntu.sh`
     - $ `bash install_ubuntu.sh`
 
 5.  启动ubuntu 20.04【复制下面命令，在Termux中输入，回车】

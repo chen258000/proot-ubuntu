@@ -29,6 +29,12 @@ if [ -d $HOME/$linux  ]; then
 	exit 1
 fi
 
+if [ -f $HOME/proot-ubuntu/${linux}.tar.xz ] && [ -f $HOME/proot-ubuntu/install_ubuntu.sh ]; then
+	#mv -f $HOME/proot-ubuntu/install_ubuntu.sh $HOME
+    mv -f $HOME/proot-ubuntu/ubuntu.tar.xz $HOME
+	rm -rf $HOME/proot-ubuntu
+fi
+
 if [ ! -f $HOME/${linux}.tar.xz ]; then
 	if [ ! -f $HOME/images.json ]; then
 		wget "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/streams/v1/images.json"
