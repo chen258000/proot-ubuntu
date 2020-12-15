@@ -22,3 +22,4 @@
 
 5.  启动ubuntu 20.04【复制下面命令，在Termux中输入，回车】
     - $ `ubuntu`
+	- 【 **注意** 】 注意看  ~ 变成 root@localhost  就说明 ubuntu 已经启动了 ，如果报错了就 【 `rm -rf ubnutu` 】 再从第3步开始！！！
