@@ -73,7 +73,7 @@ if [ -f $HOME/${linux}.tar.xz ]; then
 	echo "export  TZ='Asia/Shanghai'" >> root/.bashrc
     echo "更换国内清华源"
     mv etc/apt/sources.list etc/apt/sources.list.bak
-    echo -e "deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal main restricted universe multiverse\ndeb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-updates main restricted universe multiverse\ndeb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-backports main restricted universe multiverse\ndeb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-security main restricted universe multiverse" >> etc/apt/sources.list
+    echo -e "deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ focal main restricted universe multiverse\ndeb https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ focal-updates main restricted universe multiverse\ndeb https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ focal-backports main restricted universe multiverse\ndeb https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ focal-security main restricted universe multiverse" >> etc/apt/sources.list
 	echo -e "if [ ! -d DNA_3.0 ]; then\n\tif [ -d DNA ] && [ -f DNA/run.py ]; then\n\t\tpushd DNA >/dev/null\n\t\tchmod -R 777 Insides/*\n\t\tpython3 run.py\n\t\tpopd >/dev/null\n\tfi\nfi" >> root/.bashrc
 	cd "$HOME"
 
