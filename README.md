@@ -15,6 +15,8 @@
 
 3.  下载ubuntu.tar.xz【复制下面命令，在Termux中输入，回车】
     - $ `git clone https://gitee.com/sharpeter/proot-ubuntu`
+    下载慢也可直接跳过，进行第4步，
+    - $ `wget https://gitee.com/sharpeter/proot-ubuntu/raw/master/install_ubuntu.sh`
 
 4.  解压安装【复制下面命令，在Termux中输入，回车】
     - $ `wget https://gitee.com/sharpeter/proot-ubuntu/raw/master/install_ubuntu.sh`
