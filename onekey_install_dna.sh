@@ -75,7 +75,7 @@ if [ -f $HOME/${linux}.tar.xz ]; then
 	echo "更换国内清华源 ..."
 	mv etc/apt/sources.list etc/apt/sources.list.bak
 	echo -e "deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ focal main restricted universe multiverse\ndeb https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ focal-updates main restricted universe multiverse\ndeb https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ focal-backports main restricted universe multiverse\ndeb https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ focal-security main restricted universe multiverse" >> etc/apt/sources.list
-	echo -e "if [ -d DNA ] && [ -f DNA/run.py ]; then\n\tpushd DNA >/dev/null\n\tchmod -R 777 Insides/*\n\tpython3 run.py\n\tpopd >/dev/null\nfi\nfi" >> root/.bashrc
+	echo -e "if [ -d DNA ] && [ -f DNA/run.py ]; then\n\tpushd DNA >/dev/null\n\tchmod -R 777 Insides/*\n\tpython3 run.py\n\tpopd >/dev/null\nfi\n" >> root/.bashrc
 	cd "$HOME"
 
 	if [ $linux == "ubuntu" ]; then
