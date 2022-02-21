@@ -146,13 +146,15 @@ apt update && apt upgrade -y
 
 
 echo "安装一些依赖软件包 ..."
-apt install git cpio aria2 brotli android-sdk-libsparse-utils openjdk-11-jre p7zip-full -y
+#apt install git cpio aria2 brotli android-sdk-libsparse-utils openjdk-11-jre p7zip-full -y
+apt install brotli android-sdk-libsparse-utils e2fsprogs -y
 
 echo "下载安装 D.N.A ..."
-git clone https://gitee.com/sharpeter/DNA.git --depth 1
+#git clone https://gitee.com/sharpeter/DNA.git --depth 1
+git clone https://gitee.com/sharpeter/DNA2 -b feature --depth 1
 
 echo "启动 D.N.A ..."
-cd DNA && python3 run.py
+cd DNA2 && python3 start.py
 Errors
 
 
